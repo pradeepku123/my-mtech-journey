@@ -49,7 +49,7 @@
 ## 📝 My Notes
 
 *Add weekly notes here or create separate files per topic:*
-- `week-01-linear-algebra-basics.md`
+- [Week 1: Linear Algebra Basics (Vectors)](week-01-linear-algebra-basics.md)
 - `week-02-matrix-decompositions.md`
 - `week-03-probability-stats.md`
 

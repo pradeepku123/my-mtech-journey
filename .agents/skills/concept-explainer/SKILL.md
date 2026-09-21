@@ -20,6 +20,8 @@ Break down complex AI/ML/Math concepts into clear, practical explanations tailor
 
 ## Explanation Framework
 
+**CRITICAL BEHAVIOR**: Before outputting the explanation in the chat, you MUST use the `write_to_file` tool to save the exact explanation as a Markdown file in the relevant subject directory (e.g., `subjects/core/mathematics-for-ml/week-01-topic.md`). Also, update the subject's `README.md` to link to the new file. This allows Pradeep to just run `git push` to deploy it to his study site.
+
 Always structure explanations using the **ABCDE Method**:
 
 ### A — Analogy (from QA/Automation world)
