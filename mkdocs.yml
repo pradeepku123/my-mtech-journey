@@ -1,0 +1,152 @@
+site_name: "Pradeep's MTech AI/ML Journey"
+site_description: "Daily study logs, notes, and progress tracker for MTech AI/ML — Pradeep Kumar Behera"
+site_author: Pradeep Kumar Behera
+site_url: https://pradeepku123.github.io/my-mtech-journey/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+    - toc.integrate
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.png
+
+repo_url: https://github.com/pradeepku123/my-mtech-journey
+repo_name: pradeepku123/my-mtech-journey
+edit_uri: edit/main/
+
+nav:
+  - 🏠 Dashboard: index.md
+  - 📅 Daily Logs:
+    - Overview: daily-log/index.md
+  - 📚 Subjects:
+    - subjects/index.md
+    - Core:
+      - Mathematics for ML: subjects/core/mathematics-for-ml/README.md
+      - Machine Learning: subjects/core/machine-learning/README.md
+      - Deep Learning: subjects/core/deep-learning/README.md
+    - Electives:
+      - MLOps: subjects/electives/mlops/README.md
+  - 📊 Progress:
+    - Semester Goals: progress/semester-goals.md
+    - Skills Matrix: progress/skills-matrix.md
+    - Marks Tracker: progress/marks-tracker.md
+  - 📖 Resources:
+    - Books: resources/books.md
+    - Courses: resources/courses.md
+    - Papers: resources/papers.md
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: pradeepku123
+      repo: my-mtech-journey
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://pradeepkumar.pages.dev/
+      name: Portfolio
+    - icon: fontawesome/brands/github
+      link: https://github.com/pradeepku123
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/pradeepkumarbehera
+      name: LinkedIn
+  analytics:
+    provider: google
+    property: !ENV [GOOGLE_ANALYTICS_KEY, ""]
+  generator: false
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: >
+  Copyright &copy; 2026 Pradeep Kumar Behera &mdash;
+  <a href="https://pradeepkumar.pages.dev/">Portfolio</a>
