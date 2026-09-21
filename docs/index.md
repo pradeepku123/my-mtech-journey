@@ -265,7 +265,7 @@ hide:
   <div class="cta-row">
     <a class="cta-btn cta-btn-primary" href="daily-log/">📅 Today's Log</a>
     <a class="cta-btn cta-btn-secondary" href="progress/semester-goals/">🎯 View Goals</a>
-    <a class="cta-btn cta-btn-secondary" href="subjects/">📚 Subjects</a>
+    <a class="cta-btn cta-btn-secondary" href="semesters/semester-1/mathematical-foundations-for-ai/">📚 Current Semester</a>
   </div>
 </div>
 
@@ -289,7 +289,7 @@ hide:
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 5%"></div></div>
     <small style="color:#64748b">5% — Starting Chapter 1</small>
 
-    [:octicons-arrow-right-24: Open Notes](subjects/core/mathematics-for-ml/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/mathematical-foundations-for-ai/README.md)
 
 -   :material-robot-outline: **Machine Learning**
 
@@ -300,7 +300,7 @@ hide:
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
     <small style="color:#64748b">0% — Not started yet</small>
 
-    [:octicons-arrow-right-24: Open Notes](subjects/core/machine-learning/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/machine-learning/README.md)
 
 -   :material-brain: **Deep Learning**
 
@@ -311,7 +311,7 @@ hide:
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
     <small style="color:#64748b">0% — Not started yet</small>
 
-    [:octicons-arrow-right-24: Open Notes](subjects/core/deep-learning/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-2/deep-learning/README.md)
 
 -   :material-rocket-launch: **MLOps** ⭐ Career Bridge
 
@@ -322,7 +322,7 @@ hide:
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 10%"></div></div>
     <small style="color:#7c3aed">10% — Existing AWS + CI/CD foundation</small>
 
-    [:octicons-arrow-right-24: Open Notes](subjects/electives/mlops/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-2/mlops/README.md)
 
 </div>
 

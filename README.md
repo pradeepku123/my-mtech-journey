@@ -46,13 +46,13 @@ my-mtech-journey/
 │       └── 09/
 │           └── 2026-09-21.md        # Example: Today's log
 │
-├── subjects/                        # 📚 Subject-wise study material
-│   ├── core/
+├── semesters/                         # 📚 Curriculum modules
+│   ├── semester-1/
 │   │   ├── mathematics-for-ml/      # Linear Algebra, Calculus, Stats
-│   │   ├── machine-learning/        # Supervised, Unsupervised, RL
+│   │   └── machine-learning/        # Supervised, Unsupervised, RL
+│   ├── semester-2/
 │   │   ├── deep-learning/           # Neural Nets, CNNs, RNNs, Transformers
-│   │   └── data-structures-algo/    # DSA for coding rounds & assignments
-│   ├── electives/
+│   │   ├── data-structures-algo/    # DSA for coding rounds & assignments
 │   │   ├── nlp/                     # Natural Language Processing
 │   │   ├── computer-vision/         # CV & Image Processing
 │   │   └── mlops/                   # ML in Production (links to your QA bg)

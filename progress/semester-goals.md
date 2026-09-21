@@ -26,7 +26,7 @@
 
 ## 📚 Subject-wise Goals
 
-### Mathematics for Machine Learning
+### Mathematical Foundations for AI
 - [ ] Linear Algebra: Vectors, Matrices, Eigendecomposition
 - [ ] Calculus: Partial derivatives, Chain rule, Gradient descent intuition
 - [ ] Probability: Distributions, Bayes theorem, MLE, MAP
@@ -34,7 +34,7 @@
 - [ ] Optimization: Convex functions, Lagrange multipliers
 - **Resource**: [Mathematics for ML (free PDF)](https://mml-book.github.io/)
 
-### Machine Learning
+### Applied Machine Learning
 - [ ] Supervised: Linear Regression, Logistic Regression, Trees, SVM
 - [ ] Unsupervised: K-Means, PCA, DBSCAN
 - [ ] Ensemble: Random Forest, Gradient Boosting, XGBoost

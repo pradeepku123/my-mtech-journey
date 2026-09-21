@@ -45,10 +45,10 @@ jobs:
       - name: 📁 Copy study content into docs/
         run: |
           # Ensure target directories exist
-          mkdir -p docs/subjects docs/daily-log docs/progress docs/resources
-          
-          # Copy subject notes
-          cp -r subjects/* docs/subjects/
+          mkdir -p docs/semesters docs/daily-log docs/progress docs/resources
+          # Copy semesters
+          mkdir -p docs/semesters
+          if [ -d "semesters" ]; then cp -r semesters/* docs/semesters/; fi
 
           # Copy daily logs (preserve folder structure)
           if [ -d "daily-log/2026" ]; then cp -r daily-log/2026 docs/daily-log/; fi
