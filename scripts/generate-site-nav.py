@@ -10,23 +10,9 @@ Also updates mkdocs.yml's nav section for daily logs dynamically.
 
 import os
 import glob
-import yaml
+from ruamel.yaml import YAML
 from datetime import datetime
 from pathlib import Path
-
-# ── Custom YAML constructor ──────────────────────────────────────────────────
-# MkDocs uses !ENV tags (e.g. `property: !ENV [KEY, default]`)
-# yaml.safe_load doesn't know this tag, so we register a handler that resolves
-# it from the environment (or returns the default value).
-def _env_constructor(loader: yaml.SafeLoader, node: yaml.Node):
-    """Handle !ENV [VAR_NAME, default] tags in mkdocs.yml."""
-    values = loader.construct_sequence(node)
-    var_name = values[0]
-    default = values[1] if len(values) > 1 else ""
-    return os.environ.get(var_name, default)
-
-yaml.SafeLoader.add_constructor("!ENV", _env_constructor)
-# ────────────────────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
@@ -153,9 +139,12 @@ def update_mkdocs_nav_daily_logs(logs: list[dict]):
             month_entries.append({month: tree[year][month]})
         daily_nav.append({year: month_entries})
 
-    # Load and update mkdocs.yml
+    # Load and update mkdocs.yml using ruamel.yaml (preserves tags, comments)
+    yaml = YAML()
+    yaml.preserve_quotes = True
+    yaml.indent(mapping=2, sequence=4, offset=2)
     with open(MKDOCS_YML, "r") as f:
-        config = yaml.safe_load(f)
+        config = yaml.load(f)
 
     # Find and update the Daily Logs section in nav
     nav = config.get("nav", [])
@@ -169,7 +158,7 @@ def update_mkdocs_nav_daily_logs(logs: list[dict]):
     config["nav"] = nav
 
     with open(MKDOCS_YML, "w") as f:
-        yaml.dump(config, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        yaml.dump(config, f)
 
     print(f"✅ Updated mkdocs.yml nav with {len(logs)} daily log entries")
 
