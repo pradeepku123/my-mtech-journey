@@ -168,10 +168,10 @@ def process_file(filepath: str):
 
 
 def process_all():
-    """Process all notes files in subjects/ directory."""
-    notes_files = list(Path(REPO_ROOT / "subjects").rglob("*.md"))
+    """Process all notes files in semesters/ directory."""
+    notes_files = list(Path('semesters').rglob('*.md'))
     if not notes_files:
-        print("📂 No notes files found in subjects/")
+        print("📂 No notes files found in semesters/")
         return
     
     total = 0
@@ -194,7 +194,7 @@ def main():
     parser.add_argument(
         "--all",
         action="store_true",
-        help="Process all notes in subjects/ directory"
+        help="Process all notes in semesters/ directory"
     )
     
     args = parser.parse_args()
