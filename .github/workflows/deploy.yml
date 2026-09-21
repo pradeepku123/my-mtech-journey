@@ -44,18 +44,21 @@ jobs:
       # ── 4. Prepare docs/ directory ───────────────────────────────
       - name: 📁 Copy study content into docs/
         run: |
+          # Ensure target directories exist
+          mkdir -p docs/subjects docs/daily-log docs/progress docs/resources
+          
           # Copy subject notes
-          cp -r subjects docs/subjects
+          cp -r subjects/* docs/subjects/
 
           # Copy daily logs (preserve folder structure)
-          cp -r daily-log/2026 docs/daily-log/
-          cp    daily-log/TEMPLATE.md docs/daily-log/
+          if [ -d "daily-log/2026" ]; then cp -r daily-log/2026 docs/daily-log/; fi
+          cp daily-log/TEMPLATE.md docs/daily-log/
 
           # Copy progress trackers
-          cp -r progress docs/progress
+          cp -r progress/* docs/progress/
 
           # Copy resources
-          cp -r resources docs/resources
+          cp -r resources/* docs/resources/
 
       # ── 5. Auto-generate daily log index ─────────────────────────
       - name: 📅 Generate daily log index page
