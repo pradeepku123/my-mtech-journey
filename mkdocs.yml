@@ -134,10 +134,11 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/pradeepkumarbehera
       name: LinkedIn
-  analytics:
-    provider: google
-    property: !ENV [GOOGLE_ANALYTICS_KEY, ""]
   generator: false
+  # analytics: Uncomment and add your GA key when ready:
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
 
 extra_css:
   - assets/stylesheets/extra.css

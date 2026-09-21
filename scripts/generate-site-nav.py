@@ -14,6 +14,20 @@ import yaml
 from datetime import datetime
 from pathlib import Path
 
+# ── Custom YAML constructor ──────────────────────────────────────────────────
+# MkDocs uses !ENV tags (e.g. `property: !ENV [KEY, default]`)
+# yaml.safe_load doesn't know this tag, so we register a handler that resolves
+# it from the environment (or returns the default value).
+def _env_constructor(loader: yaml.SafeLoader, node: yaml.Node):
+    """Handle !ENV [VAR_NAME, default] tags in mkdocs.yml."""
+    values = loader.construct_sequence(node)
+    var_name = values[0]
+    default = values[1] if len(values) > 1 else ""
+    return os.environ.get(var_name, default)
+
+yaml.SafeLoader.add_constructor("!ENV", _env_constructor)
+# ────────────────────────────────────────────────────────────────────────────
+
 REPO_ROOT = Path(__file__).parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 DAILY_LOG_DOCS = DOCS_DIR / "daily-log"
