@@ -300,7 +300,7 @@ hide:
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
     <small style="color:#64748b">0% — Not started yet</small>
 
-    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/machine-learning/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/applied-machine-learning/README.md)
 
 -   :material-brain: **Deep Learning**
 
