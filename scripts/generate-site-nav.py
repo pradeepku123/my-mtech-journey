@@ -10,7 +10,8 @@ Also updates mkdocs.yml's nav section for daily logs dynamically.
 
 import os
 import glob
-from ruamel.yaml import YAML
+import yaml
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -139,28 +140,27 @@ def update_mkdocs_nav_daily_logs(logs: list[dict]):
             month_entries.append({month: tree[year][month]})
         daily_nav.append({year: month_entries})
 
-    # Load and update mkdocs.yml using ruamel.yaml (preserves tags, comments)
-    yaml = YAML()
-    yaml.preserve_quotes = True
-    yaml.indent(mapping=2, sequence=4, offset=2)
+    # Convert daily_nav to a YAML string (indented 4 spaces to match the nested list structure)
+    yaml_str = yaml.dump([{"📅 Daily Logs": daily_nav}], default_flow_style=False, sort_keys=False, allow_unicode=True)
+    # The output is like:
+    # - 📅 Daily Logs:
+    #   - Overview: daily-log/index.md
+    
+    # We must indent every line of yaml_str by 2 spaces so it aligns exactly under `nav:`
+    yaml_str_indented = "  " + yaml_str.replace("\n", "\n  ").rstrip(" ")
+
     with open(MKDOCS_YML, "r") as f:
-        config = yaml.load(f)
+        content = f.read()
 
-    # Find and update the Daily Logs section in nav
-    nav = config.get("nav", [])
-    for i, section in enumerate(nav):
-        if isinstance(section, dict):
-            key = list(section.keys())[0]
-            if "Daily Log" in key or "📅" in key:
-                nav[i] = {key: daily_nav}
-                break
-
-    config["nav"] = nav
+    # Regex to find the existing 📅 Daily Logs block and replace it
+    # It matches "  - 📅 Daily Logs:" up to the next "  - 📚 Subjects:"
+    pattern = r"  - 📅 Daily Logs:.*?(?=  - 📚 Subjects:)"
+    new_content = re.sub(pattern, yaml_str_indented, content, flags=re.DOTALL)
 
     with open(MKDOCS_YML, "w") as f:
-        yaml.dump(config, f)
+        f.write(new_content)
 
-    print(f"✅ Updated mkdocs.yml nav with {len(logs)} daily log entries")
+    print(f"✅ Updated mkdocs.yml nav with {len(logs)} daily log entries (via string replacement)")
 
 
 def main():
