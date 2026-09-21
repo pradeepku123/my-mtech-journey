@@ -1,9 +1,13 @@
 # 📅 Daily Study Logs
 
-> This page is **auto-generated** on every `git push` by the CI pipeline. 🤖
+> Every day of learning is a step forward. One commit at a time. 🚀
 
 ---
 
-!!! info "No logs yet"
-    Daily logs will appear here automatically once you start pushing study logs.
-    Run `bash scripts/new-daily-log.sh` to create today's log!
+## 📖 All Logs
+
+---
+
+!!! tip "How to add today's log"
+    Run `bash scripts/new-daily-log.sh` in your terminal to create today's log.
+    Once you `git push`, this page auto-updates! 🤖
