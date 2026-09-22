@@ -56,28 +56,24 @@ nav:
   - 📅 Daily Logs:
     - Overview: daily-log/index.md
   - 📚 Curriculum:
-    - Semester 1:
-      - Mathematical Foundations for AI: semesters/semester-1/mathematical-foundations-for-ai/README.md
-      - Math Day-by-Day Guide: semesters/semester-1/mathematical-foundations-for-ai/day-by-day-guide.md
-      - Advanced Data Structures: semesters/semester-1/advanced-data-structures/README.md
-      - Applied Machine Learning: semesters/semester-1/applied-machine-learning/README.md
-      - Computational Optimization: semesters/semester-1/computational-optimization/README.md
-      - Programming for Big Data: semesters/semester-1/programming-for-big-data/README.md
-    - Semester 2:
-      - Deep Learning: semesters/semester-2/deep-learning/README.md
-      - Natural Language Processing: semesters/semester-2/nlp/README.md
-      - Computer Vision: semesters/semester-2/computer-vision/README.md
-      - Reinforcement Learning: semesters/semester-2/reinforcement-learning/README.md
-      - MLOps: semesters/semester-2/mlops/README.md
-    - Semester 3:
-      - Advanced Professional Electives: semesters/semester-3/advanced-professional-electives/README.md
-      - Seminar & Technical Writing: semesters/semester-3/seminar-and-technical-writing/README.md
-      - Research Methodology: semesters/semester-3/research-methodology/README.md
-      - Minor Project / Thesis Phase I: semesters/semester-3/minor-project-thesis-phase-1/README.md
-    - Semester 4:
-      - Major Dissertation / Thesis Phase II: semesters/semester-4/major-dissertation-thesis-phase-2/README.md
-      - Industry Internship: semesters/semester-4/industry-internship/README.md
-      - Final Project Defense: semesters/semester-4/final-project-defense/README.md
+    - Semester 1 (Core):
+      - Mathematical Foundations for Machine Learning: semesters/semester-1/mathematical-foundations-for-machine-learning/README.md
+      - Math Day-by-Day Guide: semesters/semester-1/mathematical-foundations-for-machine-learning/day-by-day-guide.md
+      - Introduction to Statistical Methods: semesters/semester-1/introduction-to-statistical-methods/README.md
+      - Artificial & Computational Intelligence: semesters/semester-1/artificial-and-computational-intelligence/README.md
+      - Machine Learning: semesters/semester-1/machine-learning/README.md
+    - Semester 2 (Core & Electives):
+      - Deep Neural Networks: semesters/semester-2/deep-neural-networks/README.md
+      - Deep Reinforcement Learning: semesters/semester-2/deep-reinforcement-learning/README.md
+      - Natural Language Processing: semesters/semester-2/natural-language-processing/README.md
+      - LLMs for Generative AI: semesters/semester-2/large-language-models-for-generative-ai/README.md
+    - Semester 3 (Specialization & Systems):
+      - Agentic AI Systems: semesters/semester-3/agentic-ai-systems/README.md
+      - Architecting AI Systems: semesters/semester-3/architecting-ai-systems/README.md
+      - MLOps: semesters/semester-3/mlops/README.md
+      - Advanced Reasoning & Planning: semesters/semester-3/advanced-reasoning-and-planning/README.md
+    - Semester 4 (Capstone Project):
+      - Capstone Dissertation: semesters/semester-4/dissertation/README.md
   - 📊 Progress:
     - Semester Goals: progress/semester-goals.md
     - Skills Matrix: progress/skills-matrix.md

@@ -263,9 +263,9 @@ hide:
     </div>
   </div>
   <div class="cta-row">
-    <a class="cta-btn cta-btn-primary" href="daily-log/">📅 Today's Log</a>
-    <a class="cta-btn cta-btn-secondary" href="progress/semester-goals/">🎯 View Goals</a>
-    <a class="cta-btn cta-btn-secondary" href="semesters/semester-1/mathematical-foundations-for-ai/">📚 Current Semester</a>
+    <a class="cta-btn cta-btn-primary" href="daily-log/index.md">📅 Today's Log</a>
+    <a class="cta-btn cta-btn-secondary" href="progress/semester-goals.md">🎯 View Goals</a>
+    <a class="cta-btn cta-btn-secondary" href="semesters/semester-1/mathematical-foundations-for-machine-learning/README.md">📚 Current Semester</a>
   </div>
 </div>
 
@@ -274,55 +274,55 @@ hide:
 <!-- ═══════════════════════════════════════════════════════ -->
 
 <div class="section-header">
-  <h2>📚 Subject Progress</h2>
-  <p>Tracking every topic — from zero to proficiency</p>
+  <h2>📚 Semester 1 Subject Progress</h2>
+  <p>BITS Pilani WILP Core Courses — Tracking topic mastery</p>
 </div>
 
 <div class="grid cards" markdown>
 
--   :material-math-compass: **Mathematics for ML**
+-   :material-math-compass: **Math for Machine Learning**
 
     ---
 
-    Linear Algebra · Calculus · Probability · Statistics · Optimization
+    Linear Algebra · Calculus · Matrix Decompositions · Optimization
 
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 5%"></div></div>
-    <small style="color:#64748b">5% — Starting Chapter 1</small>
+    <small style="color:#64748b">5% — Active</small>
 
-    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/mathematical-foundations-for-ai/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/mathematical-foundations-for-machine-learning/README.md)
+
+-   :material-chart-bell-curve: **Statistical Methods**
+
+    ---
+
+    Probability · Distributions · Estimation · Hypothesis Testing · Bayes
+
+    <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
+    <small style="color:#64748b">0% — Semester 1</small>
+
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/introduction-to-statistical-methods/README.md)
+
+-   :material-brain: **Artificial & Comp Intelligence**
+
+    ---
+
+    Search · A* · Knowledge Rep · Logic · CSP · Fuzzy & Evolutionary AI
+
+    <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
+    <small style="color:#64748b">0% — Semester 1</small>
+
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/artificial-and-computational-intelligence/README.md)
 
 -   :material-robot-outline: **Machine Learning**
 
     ---
 
-    Supervised · Unsupervised · Ensembles · Evaluation · Feature Engineering
+    Supervised · Unsupervised · Bayesian · SVMs · Ensembles · Evaluation
 
     <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
-    <small style="color:#64748b">0% — Not started yet</small>
+    <small style="color:#64748b">0% — Semester 1</small>
 
-    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/applied-machine-learning/README.md)
-
--   :material-brain: **Deep Learning**
-
-    ---
-
-    Neural Nets · CNNs · RNNs · Transformers · Attention · BERT · GPT
-
-    <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 0%"></div></div>
-    <small style="color:#64748b">0% — Not started yet</small>
-
-    [:octicons-arrow-right-24: Open Notes](semesters/semester-2/deep-learning/README.md)
-
--   :material-rocket-launch: **MLOps** ⭐ Career Bridge
-
-    ---
-
-    Pipelines · Testing · SageMaker · MLflow · Docker · Monitoring
-
-    <div class="progress-bar-wrapper"><div class="progress-bar-fill" style="width: 10%"></div></div>
-    <small style="color:#7c3aed">10% — Existing AWS + CI/CD foundation</small>
-
-    [:octicons-arrow-right-24: Open Notes](semesters/semester-2/mlops/README.md)
+    [:octicons-arrow-right-24: Open Notes](semesters/semester-1/machine-learning/README.md)
 
 </div>
 
@@ -424,7 +424,7 @@ hide:
   </div>
 </div>
 
-[View all logs →](daily-log/){ .md-button }
+[View all logs →](daily-log/index.md){ .md-button }
 
 </div>
 
@@ -441,7 +441,7 @@ hide:
 !!! info "🔵 Next Up"
     Start Mathematics for ML — Chapter 1
 
-[View full goals →](progress/semester-goals/){ .md-button }
+[View full goals →](progress/semester-goals.md){ .md-button }
 
 </div>
 </div>

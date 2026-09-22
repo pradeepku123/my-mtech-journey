@@ -46,20 +46,11 @@ my-mtech-journey/
 │       └── 09/
 │           └── 2026-09-21.md        # Example: Today's log
 │
-├── semesters/                         # 📚 Curriculum modules
-│   ├── semester-1/
-│   │   ├── mathematics-for-ml/      # Linear Algebra, Calculus, Stats
-│   │   └── machine-learning/        # Supervised, Unsupervised, RL
-│   ├── semester-2/
-│   │   ├── deep-learning/           # Neural Nets, CNNs, RNNs, Transformers
-│   │   ├── data-structures-algo/    # DSA for coding rounds & assignments
-│   │   ├── nlp/                     # Natural Language Processing
-│   │   ├── computer-vision/         # CV & Image Processing
-│   │   └── mlops/                   # ML in Production (links to your QA bg)
-│   └── thesis/
-│       ├── ideas/                   # Research ideas & brainstorming
-│       ├── literature-review/       # Papers & citations
-│       └── drafts/                  # Thesis drafts
+├── semesters/                         # 📚 Curriculum modules (BITS Pilani WILP)
+│   ├── semester-1/                    # Core: Math for ML, Stats, AI & Comp Intel, ML
+│   ├── semester-2/                    # Core & Electives: Deep Neural Nets, Deep RL, NLP, LLMs/GenAI
+│   ├── semester-3/                    # Specialization & Systems: Agentic AI, Arch AI Systems, MLOps, Adv Reasoning
+│   └── semester-4/                    # Dissertation & Capstone Project
 │
 ├── projects/                        # 💻 Hands-on projects & assignments
 │   ├── mini-projects/               # Course-required mini projects

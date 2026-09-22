@@ -1,164 +1,92 @@
-# Semester 3 & 4 — Curriculum & Thesis Guidance
+# Semester 3 & 4 — Class-by-Class Curriculum (BITS Pilani WILP M.Tech AIML)
 
-> Semester 3 is transition from coursework to research.
-> Semester 4 is full thesis/dissertation mode.
-> Teaching style shifts from lecture → mentorship + research supervision.
+> Teaching plan for **Semester 3 Electives/Specialization & Semester 4 Capstone Dissertation**.
 
 ---
 
-## 📚 Semester 3 Subjects
+## 🤖 Semester 3 — Subject 1: Agentic AI Systems
+**Folder**: `semesters/semester-3/agentic-ai-systems/`  
+**Total Classes**: 10 | **Professor Persona**: Prof. Harrison Chase (LangChain) / Andrew Ng
 
-### 🔬 Subject 1: Research Methodology
-**Folder**: `semesters/semester-3/research-methodology/`
-**Total Classes**: 8 | **Professor Mode**: Research Supervisor
-**Goal**: Learn how to READ, EVALUATE, and PRODUCE research
-
-| Class | Topic | Goal |
-|-------|-------|------|
-| 01 | What is Research? | Scientific method, types of research, ML research landscape |
-| 02 | Literature Review | How to find papers, Google Scholar, Semantic Scholar, ArXiv, citing |
-| 03 | Research Paper Structure | Abstract, intro, related work, methods, experiments, conclusion |
-| 04 | Reading Papers Efficiently | 3-pass reading method, extracting key contributions, critical evaluation |
-| 05 | Experiment Design | Hypothesis → experiment → metrics → baselines → ablations |
-| 06 | Statistical Significance | p-values, confidence intervals, bootstrapping, significance in ML |
-| 07 | Writing & Communicating Research | LaTeX basics, academic writing style, figures/tables best practices |
-| 08 | Ethics in AI Research | Bias, fairness, reproducibility crisis, responsible AI, publication ethics |
-
----
-
-### 🎤 Subject 2: Seminar & Technical Writing
-**Folder**: `semesters/semester-3/seminar-and-technical-writing/`
-**Total Classes**: 6 | **Professor Mode**: Communication Coach
-**Goal**: Present research clearly and write technical documents
-
-| Class | Topic | Goal |
-|-------|-------|------|
-| 01 | Technical Writing Fundamentals | Clarity, precision, structure, audience-awareness |
-| 02 | Writing for ML/AI | Dataset cards, model cards, API docs, research blogs |
-| 03 | Presentation Skills | Slide design, storytelling with data, live demo tips |
-| 04 | Seminar Paper Preparation | Your own topic selection, outline, draft, peer review |
-| 05 | Poster & Demo Design | Conference-style poster, 2-minute pitch, live demo |
-| 06 | Mock Seminar Presentation | Practice full presentation → feedback → iterate |
-
----
-
-### 💡 Subject 3: Advanced Professional Electives
-**Folder**: `semesters/semester-3/advanced-professional-electives/`
-**Note**: Topic depends on Pradeep's chosen elective. Common options:
-
-| Elective Track | Recommended For Pradeep | Why |
-|----------------|------------------------|-----|
-| AI Ethics & Fairness | Strong career differentiator | Governance is growing fast |
-| Federated Learning | Advanced ML + privacy | Connects to distributed systems |
-| Explainable AI (XAI) | SDET bridge — model transparency | Testing angle: explain WHY model failed |
-| AI for Healthcare | High-impact domain | Emerging field with rich datasets |
-| AutoML & NAS | Meta-learning | Automate ML pipeline itself |
-
-*When Pradeep selects an elective, read relevant papers and design a 6-8 class curriculum on demand.*
-
----
-
-### 📑 Subject 4: Minor Project / Thesis Phase I
-**Folder**: `semesters/semester-3/minor-project-thesis-phase-1/`
-**Professor Mode**: Research Supervisor / Tech Lead
-**Goal**: Complete a publishable-quality mini-project
-
-#### Phase I Milestones (Class Equivalents)
-
-| Week | Milestone | Deliverable |
-|------|-----------|-------------|
-| 1-2 | Topic Selection | 1-page research proposal |
-| 3-4 | Literature Review | 10-15 paper survey table |
-| 5-6 | Data Collection & EDA | Dataset + EDA notebook |
-| 7-8 | Baseline Model | Working baseline with metrics |
-| 9-10 | Proposed Method | Your improvement over baseline |
-| 11-12 | Experiments & Ablations | Full results table with analysis |
-| 13-14 | Writing | Draft report (thesis format) |
-| 15-16 | Review & Defense | Final presentation |
-
-#### Teaching Protocol for Thesis:
-Instead of CLASS framework, use **RESEARCH LOOP**:
-1. **Status Check**: What did you do since last session?
-2. **Blocker Removal**: What's stuck? Debug together.
-3. **Next Steps**: Define 3 concrete tasks for next session.
-4. **Resources**: Recommend 1-2 papers/tools to study.
-5. **Commit**: Commit code + notes to git.
-
----
-
-## 🎓 Semester 4 Subjects
-
-### 📖 Major Dissertation / Thesis Phase II
-**Folder**: `semesters/semester-4/major-dissertation-thesis-phase-2/`
-**Professor Mode**: PhD Advisor / Co-author
-**Goal**: A complete, publication-ready thesis
-
-#### Phase II Milestones
-
-| Month | Focus | Key Task |
+| Class | Topic | Key Goal |
 |-------|-------|----------|
-| Month 1 | Expand Phase I | Add more experiments, stronger baselines |
-| Month 2 | Novel Contribution | Your unique idea — even a small one counts |
-| Month 3 | Writing Thesis | Full thesis draft (5 chapters) |
-| Month 4 | Revision | Incorporate advisor feedback |
-| Month 5 | Final Defense Prep | Mock defense, Q&A preparation |
-| Month 6 | Defense | Final submission + viva |
-
-#### Thesis Chapter Guide:
-- **Chapter 1**: Introduction (problem, motivation, contributions)
-- **Chapter 2**: Literature Review (30+ papers, organized thematically)
-- **Chapter 3**: Methodology (your approach, architecture, algorithms)
-- **Chapter 4**: Experiments & Results (tables, figures, ablations)
-- **Chapter 5**: Conclusion & Future Work
+| 01 | Agentic AI Foundations | Perception-Reasoning-Action loops, Tool interaction |
+| 02 | Single Agent Architectures | ReAct, Plan-and-Execute, Reflexion, Self-Correction |
+| 03 | Agent Memory & Context | Short-term, Long-term, Episodic memory, Vector stores |
+| 04 | Tool Calling & Schema Design | OpenAPI schemas, JSON tool definitions, dynamic tool execution |
+| 05 | Multi-Agent Collaboration | Supervisor models, Peer-to-peer networks, LangGraph state graphs |
+| 06 | Frameworks (LangGraph, AutoGen, CrewAI) | Graph-based agent state machines, human-in-the-loop |
+| 07 | Knowledge-Grounded Agents | Agentic RAG, GraphRAG, Query routing agents |
+| 08 | Agent Safety & Guardrails | Goal drift prevention, Input/output guardrails, Sandboxing |
+| 09 | Agent MLOps & Tracing | LangSmith, Phoenix tracing, Agent evaluation benchmarks |
+| 10 | Production Goal-Driven Agent Project | Build & deploy a multi-tool autonomous agent |
 
 ---
 
-### 🏢 Industry Internship
-**Folder**: `semesters/semester-4/industry-internship/`
-**Professor Mode**: Career Mentor / Technical Reviewer
+## 🏗️ Semester 3 — Subject 2: Architecting AI Systems
+**Folder**: `semesters/semester-3/architecting-ai-systems/`  
+**Total Classes**: 10 | **Professor Persona**: Prof. Chip Huyen (MLOps Author)
 
-#### Teaching Support During Internship:
-- **Weekly check-ins**: What did you build? What ML concepts are you applying?
-- **Tech help**: On-demand help with any technology you encounter
-- **Career advice**: Portfolio, GitHub, LinkedIn, interview prep
-- **Bridge work**: Connect internship work back to thesis contributions
-
-#### Recommended Internship Targets (Pradeep's profile):
-1. **ML Testing / QA Engineer at AI company** — Perfect SDET bridge
-2. **MLOps Engineer** — Direct overlap with CI/CD background
-3. **AI Platform Engineer** — AWS + ML deployment
-4. **Data Engineer with ML** — Big Data + ML pipeline
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | End-to-End AI Architectural Patterns | Event-driven AI, Lambda/Kappa architectures, Gateway patterns |
+| 02 | Agent Development Lifecycle (ADLC) | ADLC stages, Versioning agent prompts & tools |
+| 03 | MCP & Agent Protocols | Anthropic Model Context Protocol (MCP), Agent-to-Agent (A2A) gateways |
+| 04 | Scalability & Latency Optimization | Caching strategies (Semantic Cache), Dynamic batching, Speculative decoding |
+| 05 | Resiliency & Fault Tolerance | Circuit breakers, Fallback LLM routers, Graceful degradation |
+| 06 | Domain-Specific AI Blueprints | Enterprise search, Conversational bot, Code assistance architectures |
+| 07 | Cloud-Native AI Integration | Serverless ML (AWS Lambda, Bedrock Studio), API Gateway integration |
+| 08 | Security & Privacy Architecture | Data masking, PII scrubbing, Enterprise IAM for AI models |
+| 09 | Cost Optimization & Tokens | Token estimation, Prompt compression, Routing across model tiers |
+| 10 | Governance & Compliance | Audit logging, AI System Risk Assessment, EU AI Act compliance |
 
 ---
 
-### 🏆 Final Project Defense
-**Folder**: `semesters/semester-4/final-project-defense/`
-**Professor Mode**: Defense Prep Coach
+## 🚀 Semester 3 — Subject 3: MLOps (Machine Learning Operations)
+**Folder**: `semesters/semester-3/mlops/`  
+**Total Classes**: 10 | **Professor Persona**: Prof. Chip Huyen / SDET Practitioner
 
-#### Defense Preparation Plan (6 weeks before):
-| Week | Focus |
-|------|-------|
-| Week -6 | Complete final draft thesis |
-| Week -5 | Mock presentation (45 min talk) |
-| Week -4 | Q&A practice — 50 common viva questions |
-| Week -3 | Slide polish + live demo prep |
-| Week -2 | Full mock defense with timer |
-| Week -1 | Rest, light review, logistics |
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | MLOps Foundations & Lifecycle | Machine Learning Operational maturity levels (Level 0 to Level 2) |
+| 02 | Experiment Tracking & Model Registry | MLflow, Weights & Biases, Model versioning & artifact tracking |
+| 03 | Data Version Control (DVC) | Versioning data and pipelines, S3 storage backends |
+| 04 | Automated ML Testing & QA | Data validation (Great Expectations), Model behavioral testing (Evidently) |
+| 05 | CI/CD Pipelines for ML | GitHub Actions for ML, Automated model retraining pipelines |
+| 06 | Containerization (Docker & Kubernetes) | Multi-stage Docker builds, Kubernetes deployments for PyTorch/vLLM |
+| 07 | Model Serving & API Design | FastAPI, gRPC, Triton Inference Server, TorchServe |
+| 08 | Monitoring & Drift Detection | Data drift (KS-test, PSI), Concept drift, Performance decay alerts |
+| 09 | AWS SageMaker & Cloud MLOps | SageMaker Pipelines, Feature Store, Model Registry, Endpoint deployment |
+| 10 | End-to-End MLOps Pipeline | Complete automated retraining & serving pipeline build |
 
-#### 50 Common Viva Questions (by Category):
-*Asked when running the skill with "defense prep" trigger*
+---
 
-**Your Contribution**:
-1. What is the main contribution of your thesis?
-2. Why is this problem important?
-3. How is your approach different from prior work?
+## 🧩 Semester 3 — Subject 4: Advanced Reasoning and Planning
+**Folder**: `semesters/semester-3/advanced-reasoning-and-planning/`  
+**Total Classes**: 10 | **Professor Persona**: Prof. Noam Brown (OpenAI / DeepMind)
 
-**Technical Depth**:
-4. Why did you choose this architecture/algorithm?
-5. What are the limitations of your approach?
-6. How would you improve this given more time?
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | Reasoning in LLMs & System 2 AI | Chain-of-Thought, System 1 vs System 2 thinking in AI |
+| 02 | Large Reasoning Models (LRMs) | DeepSeek-R1, OpenAI o1/o3 architecture & training principles |
+| 03 | Inference-Time Scaling | Compute budget allocation at test time, Search strategies |
+| 04 | Process Reward Models (PRMs) | Step-level verification, PRM training vs Outcome Reward Models |
+| 05 | Search Algorithms (MCTS & Tree Search) | Monte Carlo Tree Search for LLM reasoning, AlphaZero intuition |
+| 06 | RL for CoT Reasoning | Self-Taught Reasoner (STaR), GRPO algorithm, RL CoT optimization |
+| 07 | Verification & Code Execution | Automated verification, Code execution feedback loops |
+| 08 | Hybrid Reasoning Systems | Symbolic AI + LLMs, Neuro-symbolic integration |
+| 09 | Multi-LLM Collaboration | Debating agents, Consensus mechanisms, Mixture of Agents (MoA) |
+| 10 | Frontier Reasoning Frontiers | Reasoning benchmarks (MATH, AIME, SWE-bench) analysis |
 
-**Results**:
-7. Are your results statistically significant?
-8. How do you handle class imbalance in your dataset?
-9. What would happen if you doubled your training data?
+---
+
+## 🎓 Semester 4: Capstone Dissertation
+**Folder**: `semesters/semester-4/dissertation/`  
+**Professor Persona**: Thesis Committee Chair
+
+| Phase | Milestone | Key Deliverables |
+|-------|-----------|------------------|
+| Phase 1 | Topic Approval & Literature Review | Problem statement, Literature survey draft |
+| Phase 2 | System Design & Baseline | Dataset preparation, baseline experiments |
+| Phase 3 | Experimentation & Analysis | Main proposed solution, hyperparameter tuning |
+| Phase 4 | Thesis Writing & Defense | Final dissertation document & oral presentation |

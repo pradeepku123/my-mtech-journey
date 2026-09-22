@@ -1,142 +1,83 @@
-# Semester 1 — Class-by-Class Curriculum
+# Semester 1 — Class-by-Class Curriculum (BITS Pilani WILP M.Tech AIML)
 
-> Full teaching plan for all **6 Semester 1 subjects**.
-> Updated Sep 2026: Added AI Principles & Techniques (AICTE-mandated core subject).
-> Each subject has a complete class-by-class breakdown with topics, sub-topics, and goals.
+> Teaching plan for all **4 Semester 1 Core Subjects**.
 
 ---
 
-## 📐 Subject 1: Mathematical Foundations for AI
-**Folder**: `semesters/semester-1/mathematical-foundations-for-ai/`
-**Total Classes**: 13 | **Difficulty**: High (foundation of everything)
-**Professor Persona**: Prof. Gilbert Strang (MIT)
+## 📐 Subject 1: Mathematical Foundations for Machine Learning
+**Folder**: `semesters/semester-1/mathematical-foundations-for-machine-learning/`  
+**Total Classes**: 12 | **Professor Persona**: Prof. Gilbert Strang (MIT)
 
-### Class Breakdown
-
-| Class | Topic | Sub-Topics | Key Goal |
-|-------|-------|------------|----------|
-| 01 | Vectors & Vector Spaces | Vector definition, operations, span, basis, linear independence | Build geometric intuition for vectors |
-| 02 | Matrix Operations | Addition, multiplication, transpose, trace, properties | Matrix as a transformation |
-| 03 | Systems of Linear Equations | Gaussian elimination, row echelon, rank, null space | Solve Ax = b geometrically |
-| 04 | Determinants & Inverses | 2x2/3x3 determinants, invertibility conditions, inverse formula | When does a matrix "undo" itself? |
-| 05 | Eigenvalues & Eigenvectors | Definition, characteristic equation, diagonalization | The "special directions" of a matrix |
-| 06 | Matrix Decompositions I — LU, QR | LU factorization, QR decomposition, applications | Decompose → Solve → Reconstruct |
-| 07 | Matrix Decompositions II — SVD | SVD definition, geometric interpretation, rank-k approximation | The most important decomposition in ML |
-| 08 | PCA — Principal Component Analysis | Covariance matrix, eigenvectors as PCs, dimensionality reduction | Compress data while preserving variance |
-| 09 | Probability Foundations | Sample space, events, axioms, conditional probability, Bayes | From uncertainty to math |
-| 10 | Probability Distributions | Bernoulli, Binomial, Gaussian, Poisson, Exponential | The "models" of randomness |
-| 11 | MLE & MAP Estimation | Likelihood, log-likelihood, Maximum A Posteriori, priors | Learning from data mathematically |
-| 12 | Information Theory | Entropy, KL divergence, mutual information, cross-entropy loss connection | Why loss functions are what they are |
-| 13 | Optimization Foundations | Gradient, partial derivatives, Jacobian, Hessian, gradient descent, convexity, Lagrange | How ML models learn |
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | Vectors & Vector Spaces | Geometric intuition for vector operations, span, basis, linear independence |
+| 02 | Matrix Operations | Addition, multiplication, transpose, trace, matrix as linear transformation |
+| 03 | Systems of Linear Equations | Gaussian elimination, row echelon, rank, null space |
+| 04 | Determinants & Inverses | Determinants, invertibility conditions, inverse calculation |
+| 05 | Eigenvalues & Eigenvectors | Characteristic equation, diagonalization, spectral theorem |
+| 06 | Matrix Factorizations I — LU, QR | LU decomposition, Gram-Schmidt, QR decomposition |
+| 07 | Matrix Factorizations II — SVD | Singular Value Decomposition, geometric interpretation, rank-k approximation |
+| 08 | Principal Component Analysis (PCA) | Covariance matrix, eigenvectors as principal components |
+| 09 | Vector Calculus | Gradients, Jacobians, Hessians, directional derivatives |
+| 10 | Convex Optimization Foundations | Convex sets/functions, local vs global minima |
+| 11 | Unconstrained Optimization | Gradient Descent, Newton's method, line search |
+| 12 | Constrained Optimization | Lagrange multipliers, KKT conditions, duality |
 
 ---
 
-## 🤖 Subject 2: Applied Machine Learning
-**Folder**: `semesters/semester-1/applied-machine-learning/`
-**Total Classes**: 12 | **Difficulty**: Medium-High
-**Professor Persona**: Prof. Andrew Ng
+## 📊 Subject 2: Introduction to Statistical Methods
+**Folder**: `semesters/semester-1/introduction-to-statistical-methods/`  
+**Total Classes**: 10 | **Professor Persona**: Prof. Joseph Blitzstein (Harvard)
 
-### Class Breakdown
-
-| Class | Topic | Sub-Topics | Key Goal |
-|-------|-------|------------|----------|
-| 01 | ML Landscape & Problem Types | Supervised/Unsupervised/RL taxonomy, data types, problem framing | Frame any real problem as an ML problem |
-| 02 | Linear Regression | Hypothesis, cost function, gradient descent, normal equation | The "Hello World" of ML |
-| 03 | Logistic Regression & Classification | Sigmoid, decision boundary, cross-entropy loss, softmax | Binary and multi-class classification |
-| 04 | Bias-Variance Tradeoff | Underfitting/overfitting, learning curves, model complexity | Diagnose model performance |
-| 05 | Regularization | L1 (Lasso), L2 (Ridge), ElasticNet, dropout intuition | Control overfitting systematically |
-| 06 | Feature Engineering | Encoding, scaling, imputation, polynomial features, selection | Garbage in → Garbage out |
-| 07 | Decision Trees & Random Forests | Gini/entropy, splitting, pruning, bagging, feature importance | Tree-based ensemble power |
-| 08 | Support Vector Machines | Maximal margin, soft margin, kernel trick (RBF, poly) | "Find the best boundary" |
-| 09 | Naive Bayes & k-NN | Probabilistic classifiers, lazy learning, distance metrics | Simple but powerful baselines |
-| 10 | Gradient Boosting & Ensembles | XGBoost, LightGBM, CatBoost, stacking, blending — industry workhorses | Ensemble methods that win competitions |
-| 11 | Unsupervised: Clustering & Anomaly | k-Means, DBSCAN, hierarchical clustering, Isolation Forest, anomaly detection | Find structure AND detect outliers |
-| 12 | Model Evaluation & Selection | Confusion matrix, ROC-AUC, F1, cross-validation, grid search, SHAP basics | How to trust and explain your model |
-| 13 | ML Pipeline: End-to-End Project | Data ingestion → preprocessing → training → evaluation → serving | Put it all together |
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | Probability Axioms & Conditional | Sample spaces, events, Bayes' Theorem, independence |
+| 02 | Random Variables & Expectations | PMF, PDF, CDF, Expectation, Variance, Moments |
+| 03 | Discrete Probability Distributions | Bernoulli, Binomial, Poisson, Geometric |
+| 04 | Continuous Probability Distributions | Uniform, Gaussian (Normal), Exponential, Gamma |
+| 05 | Joint & Marginal Distributions | Bivariate distributions, Covariance, Correlation |
+| 06 | Central Limit Theorem (CLT) | Sampling distributions, Law of Large Numbers, CLT |
+| 07 | Point Estimation | Maximum Likelihood Estimation (MLE), Method of Moments |
+| 08 | Interval Estimation | Confidence intervals for means, proportions, variances |
+| 09 | Hypothesis Testing | Null/Alt hypothesis, p-values, t-tests, z-tests, Chi-square |
+| 10 | Bayesian Inferential Statistics | Prior, Likelihood, Posterior, Conjugate priors, MAP |
 
 ---
 
-## 🌳 Subject 3: Advanced Data Structures
-**Folder**: `semesters/semester-1/advanced-data-structures/`
-**Total Classes**: 10 | **Difficulty**: Medium
-**Professor Persona**: Prof. Tim Roughgarden (Stanford)
+## 🧠 Subject 3: Artificial and Computational Intelligence
+**Folder**: `semesters/semester-1/artificial-and-computational-intelligence/`  
+**Total Classes**: 10 | **Professor Persona**: Prof. Peter Norvig (Google / Stanford)
 
-### Class Breakdown
-
-| Class | Topic | Sub-Topics | Key Goal |
-|-------|-------|------------|----------|
-| 01 | Complexity Review & Recurrences | Big-O, Big-Ω, Master Theorem, recurrence trees | Analyze algorithm efficiency |
-| 02 | Advanced Trees: AVL & Red-Black | Rotations, balance factor, insertion/deletion, properties | Self-balancing binary search |
-| 03 | Heaps & Priority Queues | Min/max heap, heapify, heap sort, applications | O(log n) priority management |
-| 04 | Hash Tables Deep Dive | Hash functions, collision: chaining vs open addressing, load factor | O(1) average lookup |
-| 05 | Graphs: Representation & Traversal | Adjacency matrix/list, BFS, DFS, topological sort | Model connected data |
-| 06 | Shortest Paths | Dijkstra, Bellman-Ford, Floyd-Warshall, A* | Optimize network routing |
-| 07 | Spanning Trees & Greedy | Kruskal, Prim, Union-Find (disjoint sets) | Minimum cost connectivity |
-| 08 | Tries & Suffix Structures | Trie, compressed trie, suffix array, applications in NLP | Fast text search and indexing |
-| 09 | Segment Trees & Fenwick Trees | Range queries, lazy propagation, BIT for prefix sums | Efficient range operations |
-| 10 | Dynamic Programming Patterns | Memoization, tabulation, LCS, knapsack, DP on graphs | Optimize with subproblem reuse |
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | Intelligent Agents & State Space | Agent types, environment properties, problem formulation |
+| 02 | Uninformed Search Strategies | BFS, DFS, Depth-Limited, Uniform Cost Search |
+| 03 | Informed & Heuristic Search | A* Search, Greedy Best-First, Heuristic properties (admissibility/consistency) |
+| 04 | Adversarial Search & Game Playing | Minimax algorithm, Alpha-Beta Pruning, MCTS |
+| 05 | Constraint Satisfaction Problems (CSP) | Backtracking, AC-3 algorithm, constraint propagation |
+| 06 | Knowledge Representation & Logic | Propositional logic, First-Order logic, Unification |
+| 07 | Automated Reasoning & Inference | Resolution, Forward/Backward chaining, Knowledge Graphs |
+| 08 | Fuzzy Logic & Systems | Fuzzy sets, membership functions, fuzzy inference systems |
+| 09 | Genetic Algorithms & Evolutionary Computation | Chromosome encoding, selection, crossover, mutation |
+| 10 | Swarm Intelligence & Computational AI | Particle Swarm Optimization (PSO), Ant Colony Optimization |
 
 ---
 
-## 📊 Subject 4: Computational Optimization
-**Folder**: `semesters/semester-1/computational-optimization/`
-**Total Classes**: 10 | **Difficulty**: High
-**Professor Persona**: Prof. Stephen Boyd (Stanford)
+## 🤖 Subject 4: Machine Learning
+**Folder**: `semesters/semester-1/machine-learning/`  
+**Total Classes**: 12 | **Professor Persona**: Prof. Andrew Ng (Stanford)
 
-### Class Breakdown
-
-| Class | Topic | Sub-Topics | Key Goal |
-|-------|-------|------------|----------|
-| 01 | Optimization Landscape | Convex vs non-convex, local vs global minima, optimization problem types | See optimization in ML clearly |
-| 02 | Convex Sets & Functions | Convex sets, convex functions, Jensen's inequality, epigraph | Foundation of tractable optimization |
-| 03 | Gradient Descent | Batch GD, step size, convergence, geometric interpretation | The engine of ML training |
-| 04 | SGD & Variants | Mini-batch SGD, momentum, RMSProp, Adam, AdaGrad | Modern deep learning optimizers |
-| 05 | Constrained Optimization | Equality/inequality constraints, feasible set, KKT conditions | Optimize with constraints |
-| 06 | Lagrangian & Duality | Lagrange multipliers, dual problem, strong/weak duality | Elegant reformulation of constraints |
-| 07 | Linear Programming | LP formulation, simplex method, interior point methods | Optimize linear objectives |
-| 08 | Quadratic Programming | QP formulation, active set method, link to SVMs | Non-linear but tractable |
-| 09 | Second-Order Methods | Newton's method, quasi-Newton (L-BFGS), Hessian approximation | Faster convergence than GD |
-| 10 | Stochastic & Distributed Opt. | Variance reduction (SVRG), federated learning optimization | Scale to massive ML workloads |
-
----
-
-## 🐍 Subject 5: Programming for Big Data
-**Folder**: `semesters/semester-1/programming-for-big-data/`
-**Total Classes**: 10 | **Difficulty**: Medium (great for Pradeep's coding background)
-**Professor Persona**: Prof. Matei Zaharia (Apache Spark creator)
-
-### Class Breakdown
-
-| Class | Topic | Sub-Topics | Key Goal |
-|-------|-------|------------|----------|
-| 01 | Big Data Ecosystem | Hadoop, HDFS, MapReduce concept, Spark vs Hadoop, data velocity/volume/variety | Orient in the big data landscape |
-| 02 | Apache Spark Fundamentals | RDD, DAG, lazy evaluation, actions vs transformations, Spark context | The programming model |
-| 03 | Spark DataFrames & SQL | DataFrame API, SparkSQL, schema inference, catalyst optimizer | SQL-style big data processing |
-| 04 | Data Ingestion & Storage | Parquet, Avro, ORC, Delta Lake, S3/HDFS, partitioning strategies | Store data for fast ML training |
-| 05 | Streaming Data | Spark Streaming, Kafka integration, DStream, structured streaming | Real-time ML data pipelines |
-| 06 | Machine Learning with Spark MLlib | MLlib pipelines, feature transformers, model training at scale | Train ML on billions of rows |
-| 07 | Data Wrangling at Scale | Complex joins, window functions, null handling, skew handling | Production data quality |
-| 08 | AWS for Big Data | EMR, Glue, Athena, Kinesis, Redshift — Pradeep's AWS knowledge bridge | Cloud-native big data |
-| 09 | Performance Tuning | Partitioning, caching, broadcast joins, memory management, GC tuning | Make Spark pipelines fast |
-| 10 | End-to-End Pipeline Project | Data lake → Spark ETL → MLlib model → S3 serving → monitoring | Full production pipeline |
-
----
-
-## 🤖 Subject 6: AI Principles & Techniques
-**Folder**: `semesters/semester-1/ai-principles-and-techniques/`
-**Total Classes**: 8 | **Difficulty**: Medium
-**Professor Persona**: Prof. Stuart Russell (UC Berkeley — co-author of AIMA textbook)
-**Why Required**: AICTE-mandated core subject for MTech AI/ML. Covers foundational AI concepts tested in all MTech exams.
-
-### Class Breakdown
-
-| Class | Topic | Sub-Topics | Key Goal |
-|-------|-------|------------|----------|
-| 01 | Intelligent Agents | PEAS framework, agent types (reflex/model/goal/utility), rationality, task environments | Build the AI mental model |
-| 02 | Search Algorithms | BFS, DFS, UCS, Greedy, A* — heuristics, admissibility, consistency | How AI finds solutions |
-| 03 | Adversarial Search | Minimax algorithm, alpha-beta pruning, expectimax, game trees, MCTS | AI in games (chess → AlphaGo) |
-| 04 | Knowledge Representation | Propositional logic, first-order logic (FOL), ontologies, knowledge graphs | Give AI a world model |
-| 05 | Probabilistic Reasoning | Bayesian networks, conditional independence, d-separation, inference algorithms | Reason under uncertainty |
-| 06 | Planning & Decision Making | STRIPS, PDDL, classical planning, MDPs, decision theory | AI that achieves goals |
-| 07 | Multi-Agent Systems | Nash equilibrium, mechanism design, auctions, coordination, game theory | Many AIs interacting |
-| 08 | AI Safety, Ethics & Regulation | Alignment problem, bias, fairness metrics, EU AI Act, India's AI policy | Responsible AI engineering |
+| Class | Topic | Key Goal |
+|-------|-------|----------|
+| 01 | ML Paradigm & Workflow | Supervised, Unsupervised, Semi-supervised, ML pipeline |
+| 02 | Bayesian Learning | MAP hypothesis, Bayes Optimal Classifier, Naive Bayes |
+| 03 | Linear Regression | Cost functions, Gradient descent, Normal equation, R-squared |
+| 04 | Logistic Regression | Sigmoid function, Cross-entropy loss, Decision boundaries |
+| 05 | Regularization Techniques | L1 (Lasso), L2 (Ridge), ElasticNet, feature selection |
+| 06 | Non-Linear Models & Decision Trees | Gini impurity, Information Gain, MDL principle, pruning |
+| 07 | Instance-Based Learning | k-Nearest Neighbors, Distance metrics, KD-trees |
+| 08 | Support Vector Machines (SVM) | Hard & Soft margin, Dual formulation, Kernel trick |
+| 09 | Ensemble Methods — Bagging & Random Forests | Bootstrap aggregating, Random Forests, Out-of-Bag error |
+| 10 | Ensemble Methods — Boosting | AdaBoost, Gradient Boosting, XGBoost, LightGBM |
+| 11 | Unsupervised Learning & Clustering | k-Means, Hierarchical, DBSCAN, Gaussian Mixture Models (EM) |
+| 12 | Model Evaluation & Comparison | ROC-AUC, Precision-Recall, Cross-Validation, SHAP values |
