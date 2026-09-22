@@ -393,6 +393,14 @@ hide:
 
     > *"Exam in 5 days — help me prepare for ML"*
 
+-   :material-school: **Subject Teacher** ⭐ New
+
+    ---
+
+    Class-by-class expert lectures for every semester subject — interactive CLASS framework with curated sources
+
+    > *"Teach me class 1 of Math for ML"* or *"next class"*
+
 </div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
