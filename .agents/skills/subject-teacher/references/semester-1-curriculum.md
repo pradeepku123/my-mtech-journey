@@ -1,13 +1,14 @@
 # Semester 1 — Class-by-Class Curriculum
 
-> Full teaching plan for all 5 Semester 1 subjects.
+> Full teaching plan for all **6 Semester 1 subjects**.
+> Updated Sep 2026: Added AI Principles & Techniques (AICTE-mandated core subject).
 > Each subject has a complete class-by-class breakdown with topics, sub-topics, and goals.
 
 ---
 
 ## 📐 Subject 1: Mathematical Foundations for AI
 **Folder**: `semesters/semester-1/mathematical-foundations-for-ai/`
-**Total Classes**: 12 | **Difficulty**: High (foundation of everything)
+**Total Classes**: 13 | **Difficulty**: High (foundation of everything)
 **Professor Persona**: Prof. Gilbert Strang (MIT)
 
 ### Class Breakdown
@@ -25,7 +26,8 @@
 | 09 | Probability Foundations | Sample space, events, axioms, conditional probability, Bayes | From uncertainty to math |
 | 10 | Probability Distributions | Bernoulli, Binomial, Gaussian, Poisson, Exponential | The "models" of randomness |
 | 11 | MLE & MAP Estimation | Likelihood, log-likelihood, Maximum A Posteriori, priors | Learning from data mathematically |
-| 12 | Optimization Foundations | Gradient, partial derivatives, gradient descent, convexity, Lagrange | How ML models learn |
+| 12 | Information Theory | Entropy, KL divergence, mutual information, cross-entropy loss connection | Why loss functions are what they are |
+| 13 | Optimization Foundations | Gradient, partial derivatives, Jacobian, Hessian, gradient descent, convexity, Lagrange | How ML models learn |
 
 ---
 
@@ -47,9 +49,10 @@
 | 07 | Decision Trees & Random Forests | Gini/entropy, splitting, pruning, bagging, feature importance | Tree-based ensemble power |
 | 08 | Support Vector Machines | Maximal margin, soft margin, kernel trick (RBF, poly) | "Find the best boundary" |
 | 09 | Naive Bayes & k-NN | Probabilistic classifiers, lazy learning, distance metrics | Simple but powerful baselines |
-| 10 | Unsupervised: Clustering | k-Means, DBSCAN, hierarchical clustering, elbow method | Find hidden structure in data |
-| 11 | Model Evaluation & Selection | Confusion matrix, ROC-AUC, F1, cross-validation, grid search | How to trust your model |
-| 12 | ML Pipeline: End-to-End Project | Data ingestion → preprocessing → training → evaluation → serving | Put it all together |
+| 10 | Gradient Boosting & Ensembles | XGBoost, LightGBM, CatBoost, stacking, blending — industry workhorses | Ensemble methods that win competitions |
+| 11 | Unsupervised: Clustering & Anomaly | k-Means, DBSCAN, hierarchical clustering, Isolation Forest, anomaly detection | Find structure AND detect outliers |
+| 12 | Model Evaluation & Selection | Confusion matrix, ROC-AUC, F1, cross-validation, grid search, SHAP basics | How to trust and explain your model |
+| 13 | ML Pipeline: End-to-End Project | Data ingestion → preprocessing → training → evaluation → serving | Put it all together |
 
 ---
 
@@ -116,3 +119,24 @@
 | 08 | AWS for Big Data | EMR, Glue, Athena, Kinesis, Redshift — Pradeep's AWS knowledge bridge | Cloud-native big data |
 | 09 | Performance Tuning | Partitioning, caching, broadcast joins, memory management, GC tuning | Make Spark pipelines fast |
 | 10 | End-to-End Pipeline Project | Data lake → Spark ETL → MLlib model → S3 serving → monitoring | Full production pipeline |
+
+---
+
+## 🤖 Subject 6: AI Principles & Techniques
+**Folder**: `semesters/semester-1/ai-principles-and-techniques/`
+**Total Classes**: 8 | **Difficulty**: Medium
+**Professor Persona**: Prof. Stuart Russell (UC Berkeley — co-author of AIMA textbook)
+**Why Required**: AICTE-mandated core subject for MTech AI/ML. Covers foundational AI concepts tested in all MTech exams.
+
+### Class Breakdown
+
+| Class | Topic | Sub-Topics | Key Goal |
+|-------|-------|------------|----------|
+| 01 | Intelligent Agents | PEAS framework, agent types (reflex/model/goal/utility), rationality, task environments | Build the AI mental model |
+| 02 | Search Algorithms | BFS, DFS, UCS, Greedy, A* — heuristics, admissibility, consistency | How AI finds solutions |
+| 03 | Adversarial Search | Minimax algorithm, alpha-beta pruning, expectimax, game trees, MCTS | AI in games (chess → AlphaGo) |
+| 04 | Knowledge Representation | Propositional logic, first-order logic (FOL), ontologies, knowledge graphs | Give AI a world model |
+| 05 | Probabilistic Reasoning | Bayesian networks, conditional independence, d-separation, inference algorithms | Reason under uncertainty |
+| 06 | Planning & Decision Making | STRIPS, PDDL, classical planning, MDPs, decision theory | AI that achieves goals |
+| 07 | Multi-Agent Systems | Nash equilibrium, mechanism design, auctions, coordination, game theory | Many AIs interacting |
+| 08 | AI Safety, Ethics & Regulation | Alignment problem, bias, fairness metrics, EU AI Act, India's AI policy | Responsible AI engineering |

@@ -1,6 +1,7 @@
 # Semester 2 — Class-by-Class Curriculum
 
-> Full teaching plan for all 5 Semester 2 subjects.
+> Full teaching plan for all **6 Semester 2 subjects**.
+> Updated Sep 2026: Added Generative AI & LLMs as dedicated subject (industry-critical).
 > Each subject has a complete class-by-class breakdown with topics, sub-topics, and goals.
 
 ---
@@ -117,6 +118,28 @@
 | 07 | AWS SageMaker Deep Dive | Training jobs, endpoints, Pipelines, Model Registry — AWS bridge | Cloud ML deployment |
 | 08 | CI/CD for ML | GitHub Actions ML workflows, automated testing for models, model cards | ML DevOps (Pradeep's world!) |
 | 09 | Model Monitoring | Data drift, concept drift, Evidently AI, Grafana dashboards, alerts | Keep models healthy in production |
-| 10 | ML Testing Strategies | Unit tests for ML code, integration tests, behavioral testing, shadow mode | SDET skills → ML quality |
-| 11 | Feature Stores & Real-Time ML | Online vs offline features, Feast, Redis, latency optimization | Production feature engineering |
-| 12 | MLOps Capstone | End-to-end: data → training pipeline → CI/CD → serving → monitoring | Build a production ML system |
+| 10 | ML Testing Strategies | Unit tests, integration tests, behavioral/metamorphic testing, property-based testing, shadow mode | SDET superpowers → ML quality |
+| 11 | LLMOps — Serving LLMs | vLLM, TGI, quantization (GGUF/GPTQ), prompt versioning, eval pipelines | Serve LLMs in production |
+| 12 | Feature Stores & Real-Time ML | Online vs offline features, Feast, Redis, latency optimization | Production feature engineering |
+| 13 | MLOps Capstone | End-to-end: data → training pipeline → CI/CD → serving → monitoring + LLM endpoint | Build a complete production ML+LLM system |
+
+---
+
+## 🤖 Subject 6: Generative AI & Large Language Models
+**Folder**: `semesters/semester-2/generative-ai-llms/`
+**Total Classes**: 8 | **Difficulty**: Very High (most industry-relevant subject in 2025-2026)
+**Professor Persona**: **Prof. Andrej Karpathy** (for architecture) + **Chip Huyen** (for production)
+**Why Added**: Generative AI is now mandated in updated MTech AI/ML curricula across IITs/NITs. LLMs are the most in-demand skill in the industry.
+
+### Class Breakdown
+
+| Class | Topic | Sub-Topics | Key Goal |
+|-------|-------|------------|----------|
+| 01 | Foundation Models & Scaling Laws | Pre-training at scale, scaling laws (Kaplan et al.), emergent abilities, GPT-4/Llama/Mistral overview | Understand the big picture |
+| 02 | Prompt Engineering | Zero-shot, few-shot, chain-of-thought (CoT), ReAct, self-consistency, structured outputs | Get the most from LLMs |
+| 03 | Fine-tuning LLMs | Supervised Fine-tuning (SFT), LoRA, QLoRA, PEFT, instruction tuning, dataset preparation | Customize LLMs for your domain |
+| 04 | RLHF & Alignment | Human feedback, reward modeling, PPO on LLMs, Direct Preference Optimization (DPO), Constitutional AI | Make LLMs safe and helpful |
+| 05 | RAG — Retrieval-Augmented Generation | Vector databases (Chroma, Pinecone, Weaviate), chunking strategies, re-ranking, Agentic RAG | LLMs + your own data |
+| 06 | AI Agents & Tool Use | Function calling, tool-augmented LLMs, LangGraph, smolagents, ReAct agents, AutoGen | LLMs that take actions |
+| 07 | Evaluation & Safety | LLM benchmarks (MMLU, HumanEval), hallucination detection, red-teaming, guardrails, Constitutional AI | Trustworthy LLMs |
+| 08 | Multimodal AI | Vision-language models (LLaVA, GPT-4V, Gemini), text-to-image (DALL-E 3, SD3), audio AI | Beyond text-only LLMs |
