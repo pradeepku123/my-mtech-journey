@@ -399,9 +399,9 @@ hide:
 <!--                 RECENT ACTIVITY                        -->
 <!-- ═══════════════════════════════════════════════════════ -->
 
-<div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+<div class="activity-grid" markdown>
 
-<div>
+<div markdown>
 
 ### 📅 Recent Study Logs
 
@@ -420,7 +420,7 @@ hide:
 
 </div>
 
-<div>
+<div markdown>
 
 ### 🎯 Current Semester Goals
 
