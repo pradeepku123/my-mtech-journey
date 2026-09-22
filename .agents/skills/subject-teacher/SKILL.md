@@ -86,6 +86,143 @@ Always introduce the persona at the start:
 
 ---
 
+## Step 2.5 — AUTO-SAVE CLASS FILE (Do This BEFORE Delivering the Class)
+
+**CRITICAL**: Before outputting a single word of the lecture to chat, use `write_to_file` to save the complete class to disk. This lets Pradeep open the file in his editor and follow along while you teach.
+
+### File Path Convention
+```
+semesters/semester-[N]/[subject-folder]/class-[NN]-[topic-slug].md
+```
+
+Examples:
+```
+semesters/semester-1/mathematical-foundations-for-ai/class-01-vectors-and-vector-spaces.md
+semesters/semester-1/applied-machine-learning/class-01-ml-landscape.md
+semesters/semester-2/deep-learning/class-01-neural-network-intuition.md
+```
+
+### Topic Slug Rules
+- All lowercase, words separated by hyphens
+- No special characters
+- Max 5 words: `class-02-matrix-operations.md`
+
+### Complete File Template
+
+Save the **full lecture content** — not a summary. Every phase of the CLASS framework goes into the file:
+
+```markdown
+---
+class: [N]
+topic: "[Topic Name]"
+subject: "[Subject Full Name]"
+semester: [1|2|3|4]
+folder: "[subject-folder-name]"
+date: [YYYY-MM-DD]
+time: [HH:MM IST]
+duration_mins: [X]
+professor_persona: "[Prof. Name]"
+status: in-progress
+score: pending
+---
+
+# 📚 Class [NN]: [Topic Name]
+> **Subject**: [Subject Name] | **Semester [N]** | [Date] at [HH:MM IST]
+> **Professor Mode**: [Persona] | **Estimated Duration**: [X] mins
+
+---
+
+## 🌐 C — Context
+
+[Full Context section content — the curriculum map, why it matters, today's goals]
+
+---
+
+## 📖 L — Learn
+
+### 🔗 The SDET Analogy
+[Full analogy content]
+
+### 💡 Intuition First
+[Full intuition explanation with ASCII diagrams]
+
+### 📐 The Math
+[Full math section — formulas, definitions, worked examples]
+
+### 💻 Code
+```python
+# Full from-scratch implementation
+
+# Full NumPy/library version
+
+# Verification assertion
+```
+
+---
+
+## ⚡ A — Apply
+
+[Full Apply problems — both problems with context and expected output]
+> 💡 Hint: [optional nudge]
+> ✅ Solution: [Full solution — filled in after Pradeep attempts]
+
+---
+
+## 🔗 S — Synthesis Map
+
+```
+[Prior topics] ──→ 📍 TODAY'S TOPIC ──→ [Future topics]
+                           │
+                           ↓
+                  [Real-world application]
+```
+
+**Cross-subject connections**:
+- → [Subject]: [connection]
+
+---
+
+## 📊 S — Score (Class Checkpoint)
+
+| # | Type | Question | Answer |
+|---|------|----------|--------|
+| Q1 | Recall | [question] | [answer — fill after scoring] |
+| Q2 | Apply | [question] | [answer — fill after scoring] |
+| Q3 | Synthesize | [question] | [answer — fill after scoring] |
+
+**Your score**: [X/3] (fill after checkpoint)
+
+---
+
+## 📚 Sources for This Class
+
+| Type | Resource | Detail |
+|------|----------|--------|
+| 📖 Book | [Title], Ch.[N] | pp. [X-Y] |
+| 🎬 Video | [YouTube title] | [MM:SS – MM:SS] |
+| 🌐 NPTEL | [Course name] | Week [N], Lecture [N] |
+| 🧪 Code | [URL] | — |
+
+---
+
+## 🔮 Next Class Preview
+
+**Class [N+1]: [Next Topic Name]**
+[1-2 sentence teaser]
+
+---
+*Auto-saved at [HH:MM IST] | Status: in-progress → update to `complete` after scoring*
+```
+
+### Announce the Save to Pradeep
+After saving, output this one-liner **before** the lecture begins:
+```
+📁 Class notes auto-saved → semesters/semester-N/subject/class-NN-topic.md
+   Open it in your editor to follow along!
+```
+
+---
+
 ## Step 3 — The CLASS Teaching Framework
 
 Each class session is exactly 5 phases. Adapt depth based on time available.
@@ -248,54 +385,15 @@ After scoring:
 
 ## Step 4 — End-of-Class Actions
 
-After EVERY class, do ALL of the following:
+After EVERY class (once Pradeep has answered the checkpoint), do ALL of the following:
 
-### 1. Save Class Notes
-Use `write_to_file` to save notes:
-```
-semesters/semester-[N]/[subject-folder]/class-[NN]-[topic-slug].md
-```
-
-Template for saved file:
-```markdown
----
-class: [N]
-topic: [Topic Name]
-subject: [Subject Name]
-date: [YYYY-MM-DD]
-duration: [X] mins
-score: [X/3]
-status: complete
----
-
-# Class [N]: [Topic Name]
-
-## Summary
-[2-3 sentence recap]
-
-## Key Concepts
-[Bullet list of core ideas]
-
-## The Math
-[Formulas with symbol definitions]
-
-## Code
-```python
-[Complete runnable code]
-```
-
-## Practice Problems
-[Apply problems with solutions]
-
-## Knowledge Sources Used
-[Specific resources for this topic]
-
-## Connection Map
-[Synthesis links to other topics]
-
-## Next Class Preview
-[Brief intro to what's coming next]
-```
+### 1. Update the Already-Saved Class File
+Use `multi_replace_file_content` to patch the file saved in Step 2.5:
+- Fill in `score: [X/3]` in the frontmatter
+- Change `status: in-progress` → `status: complete`
+- Fill in checkpoint answers in the Score table (Q1/Q2/Q3 Answer column)
+- Fill in Apply solutions if Pradeep attempted them
+- Update the footer timestamp: `Status: in-progress → complete`
 
 ### 2. Update Subject README.md
 Mark the completed topic checkbox from `[ ]` to `[x]`.
@@ -306,7 +404,7 @@ Mark the completed topic checkbox from `[ ]` to `[x]`.
 ✅ CLASS [N] COMPLETE: [Topic Name]
 
 📊 Score: [X/3] | ⏱️ Time: [X] mins
-📁 Saved: semesters/semester-N/subject/class-NN-topic.md
+📁 Notes: semesters/semester-N/subject/class-NN-topic.md
 📈 Progress: [M/Total] classes done ([%]%)
 
 🔮 Next: Class [N+1] — [Next Topic]
