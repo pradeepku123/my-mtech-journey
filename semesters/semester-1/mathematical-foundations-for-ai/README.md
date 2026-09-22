@@ -9,7 +9,7 @@
 
 ### Chapter 1 — Linear Algebra
 - [x] Vectors & Vector Spaces
-- [ ] Matrix operations (add, multiply, transpose)
+- [x] Matrix operations (add, multiply, transpose)
 - [ ] Determinants & Inverse
 - [ ] Systems of linear equations
 - [ ] Eigenvalues & Eigenvectors
